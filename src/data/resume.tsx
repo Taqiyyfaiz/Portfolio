@@ -165,8 +165,7 @@ export const DATA = {
       dates: "2024",
       location: "Remote",
       description:
-        "Developed a concept for a freelancing platform with AI-driven features to enhance collaboration between clients and sellers, presented through a detailed PowerPoint during the Smart India Hackathon.
-",
+        "Developed a concept for a freelancing platform with AI-driven features to enhance collaboration between clients and sellers, presented through a detailed PowerPoint during the Smart India Hackathon.",
       links: [],
     },
     {
