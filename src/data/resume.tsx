@@ -31,14 +31,14 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     {
-      href: "https://umarfarooq.hashnode.dev", // Replace with your actual blog URL
+      href: "https://umarfarooq.hashnode.dev",
       icon: NotebookIcon,
       label: "Blog",
     },
   ],
   contact: {
-    email: "farooq72342003@gmail.com",
-    tel: "", // Phone number not provided
+    email: "umarfarooq19062003@gmail.com",
+    tel: "",
     social: {
       GitHub: {
         name: "GitHub",
@@ -94,13 +94,18 @@ export const DATA = {
   projects: [
     {
       title: "E-Commerce Website",
-      href: "https://github.com/Farooq7234/E_Commerce_ReactJS",
+      href: "https://e-commerce-react-js-six.vercel.app/",
       dates: "2024",
       active: true,
       description:
         "Developed a fully functional e-commerce platform using React.js, Tailwind CSS, and Appwrite. Features include product search, user authentication, and a responsive design. Dark mode functionality added for better user experience.",
       technologies: ["React.js", "Tailwind CSS", "Appwrite", "JavaScript"],
       links: [
+        {
+          type: "Website",
+          href: "https://e-commerce-react-js-six.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
         {
           type: "Source",
           href: "https://github.com/Farooq7234/E_Commerce_ReactJS",
@@ -117,7 +122,7 @@ export const DATA = {
       active: true,
       description:
         "A blogging platform built with Next.js and Tailwind CSS, allowing users to read, write, and manage blog posts. Features include markdown support and a clean, responsive design.",
-      technologies: ["Next.js", "React.js", "Tailwind CSS"],
+      technologies: ["React.js", "Tailwind CSS", "Appwrite", "Tinymce"],
       links: [],
       image: "/blog.png",
       video: "",
