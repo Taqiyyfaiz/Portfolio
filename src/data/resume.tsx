@@ -49,7 +49,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "www.linkedin.com/in/taqiyy-faiz", // Replace with your actual LinkedIn URL
+        url: "https://www.linkedin.com/in/taqiyy-faiz/", // Replace with your actual LinkedIn URL
         icon: Icons.linkedin,
         navbar: true,
       },
