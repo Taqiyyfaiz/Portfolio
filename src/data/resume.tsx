@@ -2,64 +2,66 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Umar Farooq",
-  initials: "A",
-  url: "https://github.com/farooq7234",
-  location: "Vellore, India",
-  locationLink: "https://www.google.com/maps/place/Vellore",
+  name: "Taqiyy Faiz",
+  initials: "TA",
+  url: "https://github.com/Taqiyyfaiz",
+  location: "Chennai, India",
+  locationLink: "https://www.google.com/maps/place/Chennai",
   description:
-    "I tinker around with my beloved laptop, exploring tools and bringing ideas to life through code",
-  summary: `Computer science undergrad specializing in full-stack development. Built production-ready projects like e-commerce stores and blogs using the MERN stack. Currently seeking internships or freelance opportunities to create impactful web solutions and expand my expertise.`,
-  avatarUrl: "/umarfarooq.jpg",
+    "Aspiring Software Engineer. I love building things and solving real world problems with technology.",
+  summary: `Pre-Final Year B.Tech Student Specializing in Data Science and AI who loves technology.passionate about problem-solving, innovation, and creating impactful solutions while continuously learning and growing.`,
+  avatarUrl: "/me.png",
   skills: [
+    "Python",
+    "Java",
+    "C++",
+    "C",
+    "HTML",
+    "CSS",
+    "IBM Services - WatsonX Assitent, Cognos BI",
     "React",
     "Next.js",
     "JavaScript",
     "TypeScript",
-    "Django",
     "Node.js",
-    "MongoDB",
-    "PostgreSQL",
     "Git",
     "Linux",
     "Tailwind CSS",
     "Appwrite",
-    "Prisma",
-    "AWS",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     {
-      href: "https://umarfarooq.hashnode.dev",
+      href: "https://taqiyyfaiz.hashnode.dev",
       icon: NotebookIcon,
       label: "Blog",
     },
   ],
   contact: {
-    email: "umarfarooq19062003@gmail.com",
+    email: "taqiyyfaiz@gmail.com",
     tel: "",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/farooq7234",
+        url: "https://github.com/Taqiyyfaiz",
         icon: Icons.github,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/umarfarooqdev7390", // Replace with your actual LinkedIn URL
+        url: "www.linkedin.com/in/taqiyy-faiz", // Replace with your actual LinkedIn URL
         icon: Icons.linkedin,
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://x.com/umarfarooq7390",
+        url: "",
         icon: Icons.x,
         navbar: true,
       },
       email: {
         name: "Send Email",
-        url: "mailto:umarfarooq19062003@gmail.com",
+        url: "mailto:taqiyyfaiz@gmail.com",
         icon: Icons.email,
         navbar: true,
       },
@@ -68,159 +70,107 @@ export const DATA = {
 
   work: [
     {
-      company: "Freelance Web Developer",
-      href: "https://www.fiverr.com/umar_farooq_73",
+      company: "Google Developer Student Club",
+      href: "[Achievment Badge]https://www.cloudskillsboost.google/public_profiles/a5fe716d-774e-453d-a25a-b8ad1949553b",
       badges: [],
-      location: "Remote",
-      title: "Full Stack Developer",
-      logoUrl: "/memoji.jpeg",
+      location: "Hybrid",
+      title: "Member of GDSC",
+      logoUrl: "GDSC.png",
       start: "2024",
       end: "Present",
       description:
-        "Worked on various freelance projects, including building responsive websites, implementing user authentication, and creating RESTful APIs using the MERN stack. Developed an e-commerce platform with product search functionality, CRUD operations, and Appwrite database integration.",
+        "Experience in Google Cloud as I have attended various Sessions on LLM.etc" + 
+        "I have Joined on a Google Cloud Study jam where I have learned. How Google Cloud Works." +
+        "Build some Applications Using Google Cloud in the Study Jam Course like Chatbot using Chatgpt and Gemini API." +
+        "I have got Swags from Google For Completing the Cloud Study Jam Which makes me Explore new Technology.",
     },
   ],
   education: [
     {
-      school: "Thanthai Periyar Government Institute of Technology",
+      school: "Dr.M.G.R. Educational and Research Institute",
       href: "",
-      degree: "Bachelor's Degree in Computer Science Engineering",
-      logoUrl: "/tpgit.jpg",
-      start: "2022",
+      degree: "B.Tech CSE Specialization in Data Science and AI",
+      logoUrl: "/MGR.png",
+      start: "2023",
       end: "2026",
     },
   ],
   projects: [
     {
-      title: "E-Commerce Website",
-      href: "https://e-commerce-react-js-six.vercel.app/",
+      title: "Diabetes-Prediction",
+      href: "https://github.com/Taqiyyfaiz/Diabetes-Prediction",
       dates: "2024",
       active: true,
       description:
-        "Developed a fully functional e-commerce platform using React.js, Tailwind CSS, and Appwrite. Features include product search, user authentication, and a responsive design. Dark mode functionality added for better user experience.",
-      technologies: ["React.js", "Tailwind CSS", "Appwrite", "JavaScript"],
+        "This project is a Diabetes Prediction App using an SVM model to assess diabetes risk from health data (e.g., blood pressure, glucose). Built with Scikit-Learn and deployed via Streamlit, it provides a quick, user-friendly prediction interface.",
+      technologies: ["Python","Scikit-Learn","Streamlit",],
       links: [
         {
-          type: "Website",
-          href: "https://e-commerce-react-js-six.vercel.app/",
+          type: "",
+          href: "",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/Farooq7234/E_Commerce_ReactJS",
+          href: "https://github.com/Taqiyyfaiz/Diabetes-Prediction",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/e-commerce-website.png",
+      image: "/Diabetes Predicion.png",
       video: "",
     },
     {
-      title: "Blog Website",
-      href: "",
+      title: "MediAssist--Chatbot",
+      href: "wellcare-medical-center.netlify.app/",
       dates: "2024",
       active: true,
       description:
-        "A blogging platform built with Next.js and Tailwind CSS, allowing users to read, write, and manage blog posts. Features include markdown support and a clean, responsive design.",
-      technologies: ["React.js", "Tailwind CSS", "Appwrite", "Tinymce"],
-      links: [],
-      image: "",
+        "A Simple Healthcare Chatbot using IBM WatsonX Assistant which makes user easy to understand the website and Easy to Use.",
+      technologies: ["HTML", "CSS", "IBM WatsonX Assistant"],
+      links: [
+        {
+          type: "Website",
+          href: "wellcare-medical-center.netlify.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Taqiyyfaiz/MediAssist--Chatbot",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/Medi.png",
       video: "",
     },
     {
-      title: "Anonymous Feedback Website",
-      href: "https://true-feed-back-gules.vercel.app/",
+      title: "Retail-Merchandising-Analysis-Dashboard",
+      href: "retail-insight-hub.netlify.app/",
       dates: "2024",
       active: true,
       description:
-        "A platform for collecting anonymous feedback, built using Next.js and Tailwind CSS. Includes features for feedback submission and admin review.",
+        "This Project Contains My College Mini Project on Retail Merchandising Analysis Using IBM Cognos BI. It includes Data Visualizations and insights aimed to optimizing retail performance, focusing on sales inventory, and promotional effectiveness.",
       technologies: [
-        "Next.js",
-        "React.js",
-        "Tailwind CSS",
-        "shadcn",
-        "auth.js",
-        "resend",
-        "zod",
+        "Data Visualization",
+        "IBM Cognos BI",
+        "IBM Services",
       ],
       links: [
         {
           type: "Website",
-          href: "https://true-feed-back-gules.vercel.app/",
+          href: "retail-insight-hub.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/Farooq7234/TrueFeedBack",
+          href: "https://github.com/Taqiyyfaiz/Retail-Merchandising-Analysis-Dashboard",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/truefeedback.png",
+      image: "/Dashboard.png",
       video: "",
     },
   ],
   hackathons: [
-    {
-      title: "AI-Integrated Freelancing Platform",
-      dates: "2024",
-      location: "Remote",
-      description:
-        "Developed a concept for a freelancing platform with AI-driven features to enhance collaboration between clients and sellers, presented through a detailed PowerPoint during the Smart India Hackathon.",
-      image: "/smart-india-hackathon.png",
-      links: [],
-    },
-    {
-      title: "AI-Based Traffic Management System",
-      dates: "2024",
-      location: "Remote",
-      description:
-        "Presented an AI-driven solution for optimizing traffic flow and reducing congestion during the Smart India Hackathon, showcasing the concept through a detailed PowerPoint presentation.",
-      image: "/smart-india-hackathon.png",
-      links: [],
-    },
-    {
-      title: "IQAC Website Development",
-      dates: "2024",
-      location: "Remote",
-      description:
-        "Designed and developed a creative IQAC website for our college, securing second prize for innovation and functionality.",
-      image: "/tpgit.jpg",
-      links: [
-        {
-          title: "Preview",
-          href: "https://tpgit-iqac.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-    },
-    {
-      title: "Kani-thamizh Website Development",
-      dates: "2024",
-      location: "Remote",
-      description:
-        "Crafted a traditional-style website for our college to streamline event management and announcements.",
-      image: "/tpgit.jpg",
-      links: [
-        {
-          title: "Preview",
-          href: "https://kani-thamizh.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-    },
-    {
-      title: "Vehicle Rental Website",
-      dates: "2024",
-      location: "Remote",
-      description:
-        "Developed a full-stack vehicle rental application, incorporating user authentication, rental management, and seamless booking features for enhanced user experience.",
-      image: "/tutedude.jpg",
-      links: [
-        {
-          title: "Source",
-          href: "https://github.com/Farooq7234/VehiCart",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-    },
+  
   ],
 } as const;
