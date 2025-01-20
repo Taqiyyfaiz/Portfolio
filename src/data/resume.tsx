@@ -123,7 +123,7 @@ export const DATA = {
         "A blogging platform built with Next.js and Tailwind CSS, allowing users to read, write, and manage blog posts. Features include markdown support and a clean, responsive design.",
       technologies: ["React.js", "Tailwind CSS", "Appwrite", "Tinymce"],
       links: [],
-      image: "/blog.png",
+      image: "",
       video: "",
     },
     {

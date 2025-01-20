@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -57,23 +58,17 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen  font-sans antialiased max-w-5xl dark:bg-[#000000]  dark:bg-[radial-gradient(#ffffff33_1px,#000_1px)]   dark:bg-[size:20px_20px]  mx-auto  py-12",
+          "min-h-screen  font-sans antialiased max-w-5xl dark:bg-[#000000]  dark:bg-[radial-gradient(#ffffff33_1px,#000_1px)]   dark:bg-[size:20px_20px]  mx-auto py-12 px-4",
           fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
           <TooltipProvider delayDuration={0}>
             {children}
+            <Analytics />
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
-        <script type="text/javascript">
-          {` (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "pwfb2qfw8o");`}
-        </script>
       </body>
     </html>
   );
