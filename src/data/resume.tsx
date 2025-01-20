@@ -9,8 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/Vellore",
   description:
     "I tinker around with my beloved laptop, exploring tools and bringing ideas to life through code",
-  summary:
-    "Computer science undergrad specializing in full-stack development. Built production-ready projects like e-commerce stores and blogs using the MERN stack. Currently seeking internships or freelance opportunities to create impactful web solutions and expand my expertise.",
+  summary: `Computer science undergrad specializing in full-stack development. Built production-ready projects like e-commerce stores and blogs using the MERN stack. Currently seeking internships or freelance opportunities to create impactful web solutions and expand my expertise.`,
   avatarUrl: "/umarfarooq.jpg",
   skills: [
     "React",
@@ -166,6 +165,7 @@ export const DATA = {
       location: "Remote",
       description:
         "Developed a concept for a freelancing platform with AI-driven features to enhance collaboration between clients and sellers, presented through a detailed PowerPoint during the Smart India Hackathon.",
+      image: "/smart-india-hackathon.png",
       links: [],
     },
     {
