@@ -1,3 +1,4 @@
+import { CertificationCard } from "@/components/Certification-card";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -28,7 +29,7 @@ export default function Page() {
                     text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
                   />
                   <BlurFadeText
-                    className="max-w-[600px] md:text-xl"
+                    className="max-w-[600px] md:text-xl "
                     delay={BLUR_FADE_DELAY}
                     text={DATA.description}
                   />
@@ -44,7 +45,7 @@ export default function Page() {
           </section>
           <section id="about">
             <BlurFade delay={BLUR_FADE_DELAY * 3}>
-              <h2 className="text-xl font-bold">About</h2>
+              <h2 className="text-xl font-bold ">About</h2>
             </BlurFade>
             <BlurFade delay={BLUR_FADE_DELAY * 4}>
               <Markdown className="prose max-w-full text-pretty font-sans text-base  dark:prose-invert">
@@ -158,6 +159,46 @@ export default function Page() {
               </div>
             </div>
           </section>
+          
+          <section id="Certificates">
+            <div className="space-y-12 w-full py-12">
+              <BlurFade delay={BLUR_FADE_DELAY * 13}>
+                <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                  <div className="space-y-2">
+                    <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                      Certifications
+                    </div>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    I love validating skills and showcasing growth through certifications.
+                    </h2>
+                    <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    I am in the process of earning certifications to enhance my skills and demonstrate my commitment to learning and growth. I value the opportunity to gain knowledge, validate expertise, and stay up-to-date with industry standards through these certifications.
+                    </p>
+                  </div>
+                </div>
+              </BlurFade>
+              <BlurFade delay={BLUR_FADE_DELAY * 14}>
+                <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+                  {DATA.hackathons.map((project, id) => (
+                    <BlurFade
+                      key={project.title + project.dates}
+                      delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                    >
+                      <CertificationCard
+                        title={project.title}
+                        description={project.description}
+                        location={project.location}
+                        dates={project.dates}
+                        image={project.image}
+                        links={project.links}
+                      />
+                    </BlurFade>
+                  ))}
+                </ul>
+              </BlurFade>
+            </div>
+          </section>
+
           <section id="hackathons">
             <div className="space-y-12 w-full py-12">
               <BlurFade delay={BLUR_FADE_DELAY * 13}>
@@ -196,6 +237,7 @@ export default function Page() {
               </BlurFade>
             </div>
           </section>
+          
           <section id="contact">
             <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
               <BlurFade delay={BLUR_FADE_DELAY * 16}>
