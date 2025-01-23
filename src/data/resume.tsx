@@ -205,8 +205,7 @@ export const DATA = {
       title: "",
       dates: "",
       location: "",
-      description:
-        "",
+      description:"",
       image: "",
       links: [],
     },
