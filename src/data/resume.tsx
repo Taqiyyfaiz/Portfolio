@@ -106,11 +106,6 @@ export const DATA = {
       technologies: ["Python","Scikit-Learn","Streamlit",],
       links: [
         {
-          type: "",
-          href: "",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/Taqiyyfaiz/Diabetes-Prediction",
           icon: <Icons.github className="size-3" />,
