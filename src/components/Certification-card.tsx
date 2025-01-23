@@ -2,24 +2,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 
+
 interface Props {
   title: string;
   description: string;
   dates: string;
-  location: string;
+  certifiedBy: string;
   image?: string;
   links?: readonly {
     icon: React.ReactNode;
-    title: string;
+    type: string;
     href: string;
   }[];
 }
 
 export function CertificationCard({
   title,
+  certifiedBy,
   description,
   dates,
-  location,
   image,
   links,
 }: Props) {
@@ -36,8 +37,8 @@ export function CertificationCard({
           <time className="text-xs text-muted-foreground">{dates}</time>
         )}
         <h2 className="font-semibold leading-none">{title}</h2>
-        {location && (
-          <p className="text-sm text-muted-foreground">{location}</p>
+        {certifiedBy && (
+          <p className="text-sm text-muted-foreground">{certifiedBy}</p>
         )}
         {description && (
           <span className="prose dark:prose-invert text-sm text-muted-foreground">
@@ -49,11 +50,13 @@ export function CertificationCard({
         <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
           {links?.map((link, idx) => (
             <Link href={link.href} key={idx}>
-              <Badge key={idx} title={link.title} className="flex gap-2">
+              <Badge key={idx} title={link.type} className="flex gap-2">
                 {link.icon}
-                {link.title}
+                {link.type}
               </Badge>
+              
             </Link>
+            
           ))}
         </div>
       )}

@@ -170,6 +170,36 @@ export const DATA = {
       video: "",
     },
   ],
+  certificates: [
+    {
+      title: "Software Conceptual Design",
+      dates: "Nov 2024",
+      certifiedBy: "NPTEL - IIT Bombay",
+      description: "From understanding Behavior, Function, and Structure (BFS) to mastering component design, I learned how software is crafted before writing a single line of code. Key takeaways:Breaking down software into manageable parts: Behavior, Function, and Structure Learning Agile methodology and its impact Exploring UML diagrams for idea visualizationUnderstanding testing phases like Alpha and Beta testing",
+      image: "/NPTEL .png",
+      links: [
+        {
+          type: "Certified",
+          href: "https://drive.google.com/file/d/1dcpDYyKQD1xVugvwqgSpjX7uQdI0MkMM/view",
+          icon: <Icons.shield className="size-3" />,
+        }
+      ],
+    },
+    {
+      title: "Red Hat System Administration I (RH124)",
+      dates: "March 2024",
+      certifiedBy: "Red Hat Academy - Program Learner",
+      description: "earned the Red Hat Academy Program Learner credential is a student at a Red Hat Academy partner institution enrolled in a Red Hat course. Earners of this badge actively engaged with Red Hat course content and practiced hands-on labs on the Red Hat Academy Learning Platform.I have developed a solid foundation in Red Hat technologies, setting the stage for continued growth in the tech field.",
+      image: "/Redhat.png",
+      links: [
+        {
+          type: "Certified",
+          href: "https://www.credly.com/badges/eed86e51-0f07-405d-9ca3-3fc774f39a7b/linked_in_profile",
+          icon: <Icons.shield className="size-3" />,
+        }
+      ],
+    },
+  ],
   hackathons: [
     {
       title: "",
